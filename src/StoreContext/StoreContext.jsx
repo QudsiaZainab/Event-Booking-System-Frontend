@@ -5,7 +5,7 @@ export const StoreContext = createContext(null);
 const StoreContextProvider = (props) => {
     const [showLogin, setShowLogin] = useState(false);
     const [token, setToken] = useState(""); // Token state
-    const url = "https://ebs-backend-3d2o.vercel.app";
+    const url = "http://localhost:4000";
 
     // Load token and userId from localStorage when the app initializes
     useEffect(() => {
